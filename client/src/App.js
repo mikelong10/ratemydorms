@@ -17,8 +17,8 @@ function App() {
   const [newOvr, setOvr] = useState(0);
   const [numRatings, setNumRatings] = useState(0);
 
-  //// attempting to display the list of all ratings as soon as
-  //// you load the page, just like avg-rating and num-ratings below
+  // attempting to display the list of all ratings as soon as
+  // you load the page, just like avg-rating and num-ratings below
   // Axios.get('http://localhost:3001/ratings')
   //   .then((res) => {
   //     // console.log(res.data);
@@ -64,7 +64,7 @@ function App() {
     if (inputType === "descr") {
       setDescr(e.target.value);
     }
-  }; 
+  };
 
   // to add a new rating to the rating table,
   // to create a new rating object and add it to
@@ -195,7 +195,7 @@ function App() {
           })}
         </div>
       </div>
-    </div> 
+    </div>
   );
 }
 

@@ -27,7 +27,7 @@ app.post('/create', (req, res) => {
 
   db.query(
     'INSERT INTO rating (room_rating, bathroom_rating, building_rating, location_rating, descr, user_id, dorm_id) VALUES (?,?,?,?,?,?,?)',
-    [room, bathroom, building, location, descr, user, dorm], 
+    [room, bathroom, building, location, descr, user, dorm],
     (err, result) => {
       if (err) {
         console.log(err);
@@ -38,9 +38,9 @@ app.post('/create', (req, res) => {
   );
 });
 
-// // works with Axios.get('http://localhost:3001/ratings') in App.js,
-// // trying to display all the ratings right when page loads,
-// // including the ratings already in the database, not just the ones just added
+// works with Axios.get('http://localhost:3001/ratings') in App.js,
+// trying to display all the ratings right when page loads,
+// including the ratings already in the database, not just the ones just added
 // app.get('/ratings', (req, res) =>  {
 //   db.query('SELECT * FROM rating WHERE dorm_id IN (6,7)', (err, result) => {
 //     if (err) {
